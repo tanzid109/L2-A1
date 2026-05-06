@@ -17,7 +17,7 @@ function reverseString(word: string): string {
   console.log(reverseWord);
   return reverseWord;
 }
-// reverseString("typescript");
+// reverseString("tanzid");
 
 //?Problem 3
 function checkType(input: string | number): "String" | "Number" {
@@ -28,3 +28,11 @@ function checkType(input: string | number): "String" | "Number" {
 // checkType(26);
 
 //?Problem 4
+
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+// Sample Input:
+// const user = { id: 1, name: "John Doe", age: 21 };
+// getProperty(user, "name");
+
