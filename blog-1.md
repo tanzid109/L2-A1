@@ -17,7 +17,7 @@ On the other side `unknown` is much safer. It means I don't know this data type 
 // Using `any`
  
 function greetAny(value: any) {
-  console.log(value.toUpperCase()); // TypeScript says nothing ✅
+  console.log(value.toUpperCase()); // TypeScript says nothing
 }
  
 greetAny(42); //  Runtime crash: value.toUpperCase is not a function
